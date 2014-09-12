@@ -25,8 +25,8 @@ class ShareViewController: SLComposeServiceViewController {
   // The URL we're uploading to.
   // NOTE: This almost certainly _won't_ work for you. Create your own request bin
   //       at http://requestb.in/ and substitute that URL here.
-  let sc_uploadURL = "http://requestb.in/ykc1ipyk"
-  let sc_maxCharactersAllowed = 25
+  let sc_uploadURL = "http://requestb.in/nq5638nq"
+  let sc_maxCharactersAllowed = 125
   
   var attachedImage: UIImage?
   
@@ -34,8 +34,7 @@ class ShareViewController: SLComposeServiceViewController {
   override func isContentValid() -> Bool {
     // Do validation of contentText and/or NSExtensionContext attachments here
     if let currentMessage = contentText {
-      let currentMessageLength = countElements(currentMessage)
-      charactersRemaining = sc_maxCharactersAllowed - currentMessageLength
+      charactersRemaining = sc_maxCharactersAllowed - countElements(currentMessage)
       
       if Int(charactersRemaining) < 0 {
         return false
@@ -44,7 +43,7 @@ class ShareViewController: SLComposeServiceViewController {
     
     return true
   }
-  
+
   override func presentationAnimationDidFinish() {
     // Only interested in the first item
     let extensionItem = extensionContext?.inputItems[0] as NSExtensionItem
@@ -64,7 +63,7 @@ class ShareViewController: SLComposeServiceViewController {
     let configName = "com.shinobicontrols.ShareAlike.BackgroundSessionConfig"
     let sessionConfig = NSURLSessionConfiguration.backgroundSessionConfigurationWithIdentifier(configName)
     // Extensions aren't allowed their own cache disk space. Need to share with application
-    sessionConfig.sharedContainerIdentifier = "group.ShareAlike"
+    sessionConfig.sharedContainerIdentifier = "group.ShareAlike2"
     let session = NSURLSession(configuration: sessionConfig)
     
     // Prepare the URL Request
@@ -130,11 +129,10 @@ class ShareViewController: SLComposeServiceViewController {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, UInt(0))) {
           attachment.loadItemForTypeIdentifier(kUTTypeImage as NSString, options: nil) {
             (imageProvider, error) -> Void in
-            var image: UIImage? = nil
             if let e = error {
               println("Item loading error: \(e.localizedDescription)")
             }
-            image = imageProvider as? UIImage
+            var image = imageProvider as? UIImage
             dispatch_async(dispatch_get_main_queue()) {
               callback(image: image)
             }

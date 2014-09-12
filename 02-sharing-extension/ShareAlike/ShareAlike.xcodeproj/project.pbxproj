@@ -15,6 +15,9 @@
 		F402B708194B31DF00E02488 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F402B707194B31DF00E02488 /* ShareViewController.swift */; };
 		F402B70A194B31DF00E02488 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F402B709194B31DF00E02488 /* MainInterface.storyboard */; };
 		F402B70D194B31DF00E02488 /* com.shinobicontrols.ShareAlike.ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F402B703194B31DF00E02488 /* com.shinobicontrols.ShareAlike.ShareExtension.appex */; };
+		F4E16D0819C2CCDC00F4FD23 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E16D0719C2CCDC00F4FD23 /* ShareViewController.swift */; };
+		F4E16D0A19C2CCDC00F4FD23 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E16D0919C2CCDC00F4FD23 /* MainInterface.storyboard */; };
+		F4E16D0D19C2CCDC00F4FD23 /* WoW.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F4E16D0319C2CCDC00F4FD23 /* WoW.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,20 @@
 			remoteGlobalIDString = F402B702194B31DF00E02488;
 			remoteInfo = ShareExtension;
 		};
+		F4E16D0B19C2CCDC00F4FD23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F402B6D5194B2B0B00E02488 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E16D0219C2CCDC00F4FD23;
+			remoteInfo = WoW;
+		};
+		F4E16D0E19C2CCDC00F4FD23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F402B6D5194B2B0B00E02488 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E16D0219C2CCDC00F4FD23;
+			remoteInfo = WoW;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				F4E16D0D19C2CCDC00F4FD23 /* WoW.appex in Embed App Extensions */,
 				F402B70D194B31DF00E02488 /* com.shinobicontrols.ShareAlike.ShareExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -71,6 +89,10 @@
 		F402B706194B31DF00E02488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F402B707194B31DF00E02488 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		F402B709194B31DF00E02488 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		F4E16D0319C2CCDC00F4FD23 /* WoW.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WoW.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E16D0619C2CCDC00F4FD23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E16D0719C2CCDC00F4FD23 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		F4E16D0919C2CCDC00F4FD23 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +117,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4E16D0019C2CCDC00F4FD23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +133,7 @@
 				F402B6DF194B2B0B00E02488 /* ShareAlike */,
 				F402B6F2194B2B0C00E02488 /* ShareAlikeTests */,
 				F402B704194B31DF00E02488 /* ShareExtension */,
+				F4E16D0419C2CCDC00F4FD23 /* WoW */,
 				F402B6DE194B2B0B00E02488 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +144,7 @@
 				F402B6DD194B2B0B00E02488 /* ShareAlike.app */,
 				F402B6EF194B2B0C00E02488 /* ShareAlikeTests.xctest */,
 				F402B703194B31DF00E02488 /* com.shinobicontrols.ShareAlike.ShareExtension.appex */,
+				F4E16D0319C2CCDC00F4FD23 /* WoW.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +206,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F4E16D0419C2CCDC00F4FD23 /* WoW */ = {
+			isa = PBXGroup;
+			children = (
+				F4E16D0719C2CCDC00F4FD23 /* ShareViewController.swift */,
+				F4E16D0919C2CCDC00F4FD23 /* MainInterface.storyboard */,
+				F4E16D0519C2CCDC00F4FD23 /* Supporting Files */,
+			);
+			path = WoW;
+			sourceTree = "<group>";
+		};
+		F4E16D0519C2CCDC00F4FD23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4E16D0619C2CCDC00F4FD23 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,6 +241,8 @@
 			dependencies = (
 				F402B70C194B31DF00E02488 /* PBXTargetDependency */,
 				F402B70F194B31DF00E02488 /* PBXTargetDependency */,
+				F4E16D0C19C2CCDC00F4FD23 /* PBXTargetDependency */,
+				F4E16D0F19C2CCDC00F4FD23 /* PBXTargetDependency */,
 			);
 			name = ShareAlike;
 			productName = ShareAlike;
@@ -233,6 +284,23 @@
 			productReference = F402B703194B31DF00E02488 /* com.shinobicontrols.ShareAlike.ShareExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		F4E16D0219C2CCDC00F4FD23 /* WoW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4E16D1019C2CCDC00F4FD23 /* Build configuration list for PBXNativeTarget "WoW" */;
+			buildPhases = (
+				F4E16CFF19C2CCDC00F4FD23 /* Sources */,
+				F4E16D0019C2CCDC00F4FD23 /* Frameworks */,
+				F4E16D0119C2CCDC00F4FD23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoW;
+			productName = WoW;
+			productReference = F4E16D0319C2CCDC00F4FD23 /* WoW.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,7 +312,7 @@
 				TargetAttributes = {
 					F402B6DC194B2B0B00E02488 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = XJ74287KY8;
+						DevelopmentTeam = 4Z4F75YXBC;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -253,11 +321,12 @@
 					};
 					F402B6EE194B2B0C00E02488 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = L7Q54NLQX7;
 						TestTargetID = F402B6DC194B2B0B00E02488;
 					};
 					F402B702194B31DF00E02488 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = XJ74287KY8;
+						DevelopmentTeam = 4Z4F75YXBC;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -266,6 +335,10 @@
 								enabled = 0;
 							};
 						};
+					};
+					F4E16D0219C2CCDC00F4FD23 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 4Z4F75YXBC;
 					};
 				};
 			};
@@ -285,6 +358,7 @@
 				F402B6DC194B2B0B00E02488 /* ShareAlike */,
 				F402B6EE194B2B0C00E02488 /* ShareAlikeTests */,
 				F402B702194B31DF00E02488 /* ShareExtension */,
+				F4E16D0219C2CCDC00F4FD23 /* WoW */,
 			);
 		};
 /* End PBXProject section */
@@ -311,6 +385,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F402B70A194B31DF00E02488 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E16D0119C2CCDC00F4FD23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E16D0A19C2CCDC00F4FD23 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +424,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4E16CFF19C2CCDC00F4FD23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E16D0819C2CCDC00F4FD23 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -359,6 +449,16 @@
 			isa = PBXTargetDependency;
 			target = F402B702194B31DF00E02488 /* ShareExtension */;
 			targetProxy = F402B70E194B31DF00E02488 /* PBXContainerItemProxy */;
+		};
+		F4E16D0C19C2CCDC00F4FD23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4E16D0219C2CCDC00F4FD23 /* WoW */;
+			targetProxy = F4E16D0B19C2CCDC00F4FD23 /* PBXContainerItemProxy */;
+		};
+		F4E16D0F19C2CCDC00F4FD23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4E16D0219C2CCDC00F4FD23 /* WoW */;
+			targetProxy = F4E16D0E19C2CCDC00F4FD23 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -460,6 +560,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShareAlike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -475,6 +576,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShareAlike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -528,6 +630,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "com.shinobicontrols.ShareAlike.$(TARGET_NAME:rfc1034identifier)";
@@ -543,9 +646,42 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "com.shinobicontrols.ShareAlike.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F4E16D1119C2CCDC00F4FD23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WoW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F4E16D1219C2CCDC00F4FD23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WoW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
@@ -589,6 +725,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F4E16D1019C2CCDC00F4FD23 /* Build configuration list for PBXNativeTarget "WoW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E16D1119C2CCDC00F4FD23 /* Debug */,
+				F4E16D1219C2CCDC00F4FD23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
